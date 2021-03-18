@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/logo/ohmyfood@2x.svg" alt="logo du restaurant ohmyfood">
+    </header>
+    <main class="main">
+        <header class="HeaderMain">
+            <nav class="MapLocalisation">
+                <a class="localisationLink" href="" >  
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="locationTitle"> Paris,Belleville </p>
+                </a> 
+            </nav>  
+            <h1 class="HeaderTitle">Réservez le menu qui vous convient</h1>
+            <p class="chHeaderParagraph">Découvrez des restaurants d'exception,séléctionnés par nos soins.</p> 
+            <button class="btn"> 
+                <span class="btnText">Explorer nos restaurants</span>
+            </button>
+        </header>
+        <section class="Operations">
+            <h1>Fonctionnement</h1>
+            <div class="RestaurantChoose">
+                <button class="btn RestaurantChoose">
+                    <i class="fas fa-mobile-alt RestaurantChooseIcon" aria-hidden="true"></i>
+                    <span class="RestaurantChooseTitle">Choisissez un restaurant</span>
+                </button> 
+            </div>
+            <div class="MenuChoose">
+                <button class="btn MenuChoose">
+                    <i class="fas fa-list-ul MenuChooseIcon" aria-hidden="true"></i>
+                    <span class="MenuChooseTitle">Composez votre menu</span>
+                </button> 
+            </div>
+            <div class="MenuChoose">
+                <button class="btn TasteFoodRestaurant">
+                    <i class=" TasteFoodRestaurantIcon" aria-hidden="true"></i>
+                    <span class="TasteFoodRestaurantTitle">Dégustez au restaurant</span>
+                </button> 
+            </div>   
+        </section>
+
+        <section class="Restaurants"> 
+            <div>
+              <header class="RestaurantsTitle">
+                <h1 class="RestaurantTitle">Restaurants</h1>
+              </header>
+              <article class="RestaurantCard">
+                <a  href="#"> 
+                  <figure class="RestaurantCardFigure">  
+                    <img class="RestaurantCardimg" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat de nouveau restaurant, la palette du goût situé à Ménilmontant,"></img>
+                    <figcaption class="hostingCardFigcaptionTitle"> 
+                        <h2 class="hostingCardTitle">La palette du goût</h2>
+                    </figcaption>   
+                  </figure> 
+                  <div class="New">
+                  <h2 class="NewRestaurant">Nouveau</h2>
+                  </div>
+                  <p class="RestaurantLocalisation">Ménilmontant</p>
+                  <div>
+                    <i class="far fa-heart RestaurantGradeIconHeart" data-active="false" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="#">
+                <figure class="RestaurantCardFigure">  
+                    <img class="RestaurantCardimg" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat d'un nouveau restaurant -La note enchantée- situé à Charonne"></img>
+                    <figcaption class="hostingCardFigcaptionTitle"> 
+                        <h2 class="hostingCardTitle">La note enchantée</h2>
+                    </figcaption>   
+                  </figure> 
+                  <div class="New">
+                  <h2 class="NewRestaurant">Nouveau</h2>
+                  </div>
+                  <p class="RestaurantLocalisation">Charonne</p>
+                  <div>
+                    <i class="far fa-heart RestaurantGradeIconiconHeart" data-active="true" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a class="#">
+                <figure class="RestaurantCardFigure">  
+                    <img class="RestaurantCardimg" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat de restaurant -A la française- situé à la cité Rouge"></img>
+                    <figcaption class="RestaurantCardFigcaptionTitle"> 
+                        <h2 class="RestaurantCardTitle">A la france</h2>
+                    </figcaption>   
+                </figure> 
+                  <div>
+                  <p class="RestaurantLocalisation">Cité Rouge</p>
+                  </div>
+                  <div>
+                    <i class="far fa-heart RestaurantGradeIconHeart" data-active="false" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a class="#">
+                      <figure class="RestaurantCardFigure">  
+                        <img class="RestaurantCardimg" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'un plat d'un restaurant -Le délice des sens- situé à Folie-Méricourt"></img>
+                        <figcaption class="RestaurantCardFigcaptionTitle"> 
+                            <h2 class="RestaurantCardTitle">Le délice des sens</h2>
+                        </figcaption>   
+                      </figure> 
+                      <div>
+                      <p class="RestaurantLocalisation">Folie-Méricourt</p>
+                      </div>
+                      <div>
+                        <i class="far fa-heart RestaurantGradeIconHeart" data-active="false" aria-hidden="true"></i>
+                      </div>
+                </a>
+              </article>
+            </div>  
+        </section>
+    </main>
+    <footer class="Footer">
+        <H1 class="FooterTitle"><i> ohmyfood</i></H1>
+        <a class="footerLink" href="#">
+            <i class="fas fa-utensils FooterRestaurantIcon" aria-hidden="true"></i>
+            <span class="FooterRestaurants">Proposer unrestaurant</span>
+        </a><br>
+        <a class="footerLink" href="#">
+            <i class="fas fa-hands-helping FooterPartenerRestaurantIcon" aria-hidden="true"></i>
+            <span class="FooterPartenerRestaurant">Devenir partenaire</span>
+        </a><br>
+        <a class="footerLink" href="#">
+            <span class="FooterPartenerRestaurant">Mentions légales</span>
+        </a><br>
+        <a class="footerLink" href="#">
+            <span class="RestaurantContact">Contact</span>
+            <div class="form-group">
+                <label class="Email"> E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </a><br>
+        
+    </footer>
+</body>
+</html>
