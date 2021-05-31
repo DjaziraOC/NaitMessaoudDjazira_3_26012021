@@ -1,0 +1,107 @@
+//couleurs principales
+$Primaire:#9356DC ;
+$Secondaire:#FF79DA;
+$Tertiaire:#99E2D0;
+$white: white;
+$pink:#fcbae9;
+
+//utilitaires couleurs
+$background-color1:#99E2D0 ;
+$background-color2:white;
+
+//textes
+$txt-fond-sombre:#ffffff;
+$txt-fond-clair:#000000;
+
+//Dimensions
+$radius-btn:30px;
+$radius-card: 20px;
+
+
+@mixin absolute-el ($top,$left,$bottom,$right){
+    content:'';
+    position:absolute;
+    top:$top;
+    left:$left;
+    bottom:$bottom;
+    right:$right; 
+}
+
+@mixin _header {
+    display:-webkit-box;
+    display:flex;                  
+      -webkit-box-align: center;
+              align-items: center;
+       -webkit-box-pack:justify;
+              justify-content:space-between;
+    height: 64px;
+    max-width: 100%;
+    margin: auto;
+    background-color:$white;
+  
+    &__icon{
+      margin:2px 0 0 22px; 
+      font-size: x-large;
+      padding: 21px 0 16px 0;
+    }
+    &__logo{
+      margin: auto;
+      padding:21px 0px 16px 9px; 
+   }
+}
+/*utilisation des placeholder*/
+
+%flex-center {   
+    display: -webkit-box;
+    display: flex;
+     -webkit-box-pack: center;
+          justify-content: center;
+    -webkit-box-align: center;
+          align-items: center;
+   
+}
+
+
+%trunc {
+    -webkit-transition-property:width;
+    -o-transition-property:width;
+    transition-property:width;
+    white-space:nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;  
+}
+
+
+@mixin _footer{
+    
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-color: rgb(53, 51, 51);
+  padding: 25px;
+  
+  &__logo {
+      color:$txt-fond-sombre;
+      font-family: 'Shrikhand',cursive;
+      font-size:larger;
+      font-weight: 100;
+      margin-bottom:26px;
+  }
+  &__link {
+      color:$txt-fond-sombre;
+      z-index: 1;
+      font-size:15px;
+     
+      &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+      }
+      &__icon {
+          margin-right:10px ;
+      }  
+  } 
+ 
+}

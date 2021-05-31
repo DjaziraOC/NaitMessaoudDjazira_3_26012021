@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Shrikhand&display=swap');
+@import './-variables';
+
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.main {
+  margin: auto; 
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
+  display:block;
+  background-color: #f6f6f6;
+}
+
+/*Header*/
+.header {
+  @include _header;
+}
+
+/*Main*/
+.main__header{
+  width: 100%;
+  margin: 0;
+  &__Img{
+       width: 100%;   
+    &__img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }   
+}
+.Menu{
+  display: -webkit-box;
+  display: flex;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+           flex-direction:column;
+   background-color: #f6f6f6;
+   border-radius:62px  62px 0 0 ;
+   -webkit-box-pack: center;
+           justify-content: center;
+   position: relative;
+   height:100% ;
+   width: 100%;
+   z-index: 2;
+   top:-155px;
+   @media (min-width:1300px){
+    top:-190px;  
+   }
+
+  &__header{
+    display: -webkit-box;
+    display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
+        margin:0 12px 0 20px;  
+    &__title{
+      margin:32px 21px 32px 0px;
+      font-weight:500 ;
+      font-size: 1.7em;
+      font-family: 'Shrikhand',cursive;
+    }  
+    &__icon{
+      font-size:Xx-large;
+      margin-right:26px ;
+    }
+  }
+}
+
+.menu{
+  height: 100%;
+  @media (min-width:850px) {
+    &{
+      display: grid;
+      row-gap: 16px;
+      grid-template-columns: repeat(3,1fr) ;
+      margin:0 12px 0 20px;
+    }
+  }
+}
+.menu.Menus{
+  display: grid;
+  row-gap: 16px;
+  grid-template-rows:auto repeat(3,1fr) ;
+  grid-template-columns: 1fr;
+  margin:0 12px 0 20px;
+  @media (min-width:850px) {
+    &{
+      grid-template-rows:auto repeat(4,1fr) ;
+
+    }
+  }
+}
+.menu__title{
+    margin:20px 12px 21px 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    font-size:1.2em;
+    &:hover{
+      border-bottom: 3px solid $Tertiaire;
+      width:50px;
+    }
+}
+.menu__card{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: $radius-card;
+  background-color:$background-color2;
+  position: relative;
+  -webkit-box-shadow: 2px 3px 10px 0px #686767;
+          box-shadow: 2px 3px 10px 0px #686767; 
+  height: 100%;
+  overflow: hidden;
+  
+  &{
+    -webkit-animation: pro 1s linear forwards;
+        animation: pro 1s linear forwards;
+  }
+    @-webkit-keyframes pro{
+      0%{
+        opacity:1;
+      } 
+      100%{
+        opacity:0;
+      }  
+    }
+    @keyframes pro{
+      0%{
+        opacity:1;
+      } 
+      100%{
+        opacity:0;
+      }  
+    }
+  &.card1{ 
+    -webkit-animation: slidedown 1s linear 1s  backwards;
+        animation: slidedown 1s linear 1s  backwards;
+  }
+    @-webkit-keyframes slidedown{
+      from{
+          -webkit-transform: translateY(0%);
+                  transform: translateY(0%);
+          opacity:0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity:1;
+      }  
+    }
+    @keyframes slidedown{
+      from{
+          -webkit-transform: translateY(0%);
+                  transform: translateY(0%);
+          opacity:0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity:1;
+      }  
+    }
+  &.card2{
+    -webkit-animation:slidedown .7s linear 1.5s backwards;
+        animation:slidedown .7s linear 1.5s backwards;
+  }
+    @-webkit-keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: .3;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }  
+    }
+    @keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: .3;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }  
+    }
+  &.card3{
+    -webkit-animation:slidedown 1s linear 2s backwards;
+        animation:slidedown 1s linear 2s backwards;
+  }
+    @-webkit-keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }  
+    }
+    @keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }  
+    }
+  &.card4{
+    -webkit-animation:slidedown 1.2s linear 2.5s backwards;
+            animation:slidedown 1.2s linear 2.5s backwards;
+  }
+    @-webkit-keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }  
+    }
+    @keyframes slidedown{
+      from{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 0;
+      }
+      to{
+        -webkit-transform: translateY(-5%);
+                transform: translateY(-5%);
+        opacity: 1;
+      }       
+    }
+    &__text{
+      width: 100%;
+      display: grid;
+  
+      grid-template-columns:(3fr 1fr);
+      
+      &__1{
+        margin:16px 21px 0 12px; 
+        grid-column: 1/-1;   
+        @extend %trunc;
+        width: 80%;
+       
+      }
+      &__2{
+        margin:12px 0 16px 12px;
+         @extend %trunc;
+      }
+      &__3{
+        margin:12px 21px 16px 12px; 
+        text-align: end;     
+         overflow: hidden;
+      }  
+    }
+      &:hover .menu__card__text__1{
+        @extend %trunc;
+        cursor: pointer;
+        -webkit-animation: trunc 3s  cubic-bezier(0.075, 0.82, 0.165, 1)backwards; 
+                animation: trunc 3s  cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+        @-webkit-keyframes trunc {
+        
+          50%{
+            width:60%; 
+            
+          }
+          100%{
+            width:80% ;  
+          }
+        }  
+        @keyframes trunc {
+        
+          50%{
+            width:60%; 
+            
+          }
+          100%{
+            width:80% ;  
+          }
+        } 
+      }
+      &:hover .menu__card__text__2{
+        @extend %trunc;
+        cursor: pointer;
+        -webkit-animation: trunc 3s  cubic-bezier(0.075, 0.82, 0.165, 1)forwards; 
+                animation: trunc 3s  cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+              
+        @-webkit-keyframes trunc {
+        
+          50%{
+            width:60%; 
+          }
+          100%{
+            width:100% ; 
+          }
+        }
+        @keyframes trunc {
+        
+          50%{
+            width:60%; 
+          }
+          100%{
+            width:100% ; 
+          }
+        } 
+      }
+      &:hover .menu__card__text__3 {
+      
+          -webkit-animation: text 3s cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+          animation: text 3s cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+          
+          @media  (min-width:1200px){
+          @-webkit-keyframes text {
+              50%{
+                -webkit-transform: translateX(-100px);
+                        transform: translateX(-100px);
+              }
+            }
+            @keyframes text {
+              50%{
+                -webkit-transform: translateX(-100px);
+                        transform: translateX(-100px);
+              }
+            }
+        }
+        @media (min-width:848px)and (max-width:1200px){
+        
+          @-webkit-keyframes text {
+            50%{
+              -webkit-transform: translateX(-220%);
+                      transform: translateX(-220%);
+            }
+          }
+          @keyframes text {
+            50%{
+              -webkit-transform: translateX(-220%);
+                      transform: translateX(-220%);
+            }
+          }
+      }
+        @media screen and  (min-width:550px) and (max-width:848px) { 
+        
+          @-webkit-keyframes text{
+            50%{
+              -webkit-transform: translateX(-80%);
+                      transform: translateX(-80%);
+                  
+            }
+          }
+          @keyframes text {
+            50%{
+              -webkit-transform: translateX(-80%);
+                      transform: translateX(-80%);
+                    
+            }
+          }
+        }   
+        @media  screen and (max-width:550px)and (min-width:345px) {
+        
+    
+          @-webkit-keyframes text {
+            50%{
+              -webkit-transform: translateX(-170%);
+                      transform: translateX(-170%);
+                      
+            }
+          }
+          @keyframes text {
+            50%{
+              -webkit-transform: translateX(-170%);
+                      transform: translateX(-170%);
+                    
+            }
+          }
+        }
+        @media (max-width:345px) {
+        
+          @-webkit-keyframes text {
+            50%{
+              -webkit-transform: translateX(-240%);
+                      transform: translateX(-240%);
+            }
+          }
+          @keyframes text {
+            50%{
+              -webkit-transform: translateX(-240%);
+                      transform: translateX(-240%);
+            }
+          }
+        }
+      }
+    &__icon {
+      background-color:transparent;
+      border-radius:0 20px 20px 0; 
+      border:0px;
+      position:absolute;
+      cursor: pointer;
+      right: 0;
+      padding: 0;
+      height: 100%;
+      z-index: -1;
+      -webkit-transition-property:width ;
+      -o-transition-property:width ;
+      transition-property:width ; 
+      overflow: hidden;
+    }
+    &:hover .menu__card__icon{
+      animation: slide 3s cubic-bezier(0.075, 0.80, 0.1, 1) forwards;
+      background-color:$Tertiaire;
+    }
+      @keyframes slide{
+       0%{
+          z-index: -1;
+          width:0%;     
+        } 
+        50%{
+          width:90px;
+          z-index: 1;
+          
+        }
+        100%{
+          z-index: 1;
+          width:0%;      
+        }     
+      } 
+    &__iconbtn{
+      position: relative;
+      color:$Tertiaire;
+      background:$background-color2;
+      border: 1px solid $white;
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      margin:25px;
+      border-radius:50%;
+      overflow: hidden;
+  
+    }
+    &__iconbtn::before{
+      position:absolute;
+      z-index:-1;
+      left: 50%;
+      top:50%;
+      -webkit-transform:translate(-50%,-50%);
+              transform:translate(-50%,-50%);
+    }
+    &__iconbtn::after{
+      content:"";
+      position:absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%; 
+      border-radius: 50%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transform:translate(-50%,-50%);
+              transform:translate(-50%,-50%); 
+    }
+    &:hover .menu__card__iconbtn{
+      -webkit-animation: ro 0.5s linear   forwards;
+          animation: ro 0.5s linear   forwards; 
+    } 
+      @-webkit-keyframes ro{   
+        0%{
+          -webkit-transform: rotate(-180deg);
+                  transform: rotate(-180deg);   
+        }
+        100%{
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);    
+        }
+      } 
+      @keyframes ro{   
+        0%{
+          -webkit-transform: rotate(-180deg);
+                  transform: rotate(-180deg);   
+        }
+        100%{
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);    
+        }
+      }
+    
+  }
+  .btn{
+    @extend %flex-center;
+    position: relative;
+    border-radius:$radius-btn;
+    color: $white;
+    margin: auto;
+    margin-top:50px;
+    height:45px;
+    width:200px;
+    z-index: 1;
+    font-size: large;
+    -webkit-box-shadow: 2px 5px 16px 0px gray;
+            box-shadow: 2px 5px 16px 0px gray;
+    background: -webkit-gradient(linear, left bottom, left top, from($Primaire), to($Secondaire));
+    background: -o-linear-gradient(bottom, $Primaire, $Secondaire);
+    background: linear-gradient(0deg,$Primaire, $Secondaire);
+    -webkit-transform: scale(1);
+            transform: scale(1); 
+    -webkit-transition-property: -webkit-transform; 
+    transition-property: -webkit-transform; 
+    -o-transition-property: transform; 
+    transition-property: transform; 
+    transition-property: transform, -webkit-transform;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    -o-transition: transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    background-size: 200%;
+  
+    &:hover{
+      -webkit-transform: scale(1.10);
+          transform: scale(1.10); 
+      -webkit-box-shadow: 2px 5px 16px 0px rgb(0, 0, 0,3); 
+              box-shadow: 2px 5px 16px 0px rgb(0, 0, 0,3);
+      background: -webkit-gradient(linear,left bottom, left top,color-stop(15%, $Primaire),color-stop($Secondaire),to($pink));
+      background: -o-linear-gradient(bottom,$Primaire 15%,$Secondaire,$pink);
+      background: linear-gradient(to top,$Primaire 15%,$Secondaire,$pink);
+      background-position: top;
+      cursor: pointer;
+    }
+  }
+  
+  /*Footer*/
+  .footer {
+    @include _footer;
+  }
+  
