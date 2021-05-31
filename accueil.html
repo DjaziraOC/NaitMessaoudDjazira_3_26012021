@@ -10,6 +10,9 @@
     <title>Accueil</title>
 </head>
 <body>
+    <div class="loading">
+        <span class="loading__loader loader-quart"></span>
+    </div>
     <header class="header">
         <img class="header__logo" src="./images/logo/ohmyfood@2x.svg" alt="logo du restaurant ohmyfood">
     </header>
@@ -21,110 +24,89 @@
             </a>   
             <h1 class="main__title">Réservez le menu qui vous convient</h1>
             <p class="main__paragraph">Découvrez des restaurants d'exception,<br>séléctionnés par nos soins.</p> 
-            <a class="main__link">Explorer nos restaurants</a>
+            <a class="main__btn">Explorer nos restaurants</a>    
+            
         </header>
-
         <section class="operations">
             <h2 class="operations__title">Fonctionnement</h2>
             <ol class="operations__lists">
                 <li class="operations__list">
-                    <div class="operations__list__restaurants">
-                        <button class="operations__list__btn">
-                            <i class="operations__list__btn__icon fas fa-mobile-alt"></i>
-                            <span class="operations__list__btn__title">Choisissez un restaurant</span>
-                        </button> 
-                    </div>
+                    <button class="operations__list__btn">
+                        <i class="operations__list__btn__icon fas fa-mobile-alt"></i>
+                        <span class="operations__list__btn__title">Choisissez un restaurant</span>
+                    </button> 
                 </li>
-            </ol>
-            <ol class="operations__lists">
-                <li class="operations__list">
-                    <div class="operations__menuChoose">
-                        <button class="operations__list__btn">
-                                <i class="operations__list__btn__icon fas fa-list-ul"></i>
-                                <span class="operations__list__btn__title">Composez votre menu</span>
-                        </button> 
-                    </div>
+                <li class="operations__list">  
+                    <button class="operations__list__btn">
+                            <i class="operations__list__btn__icon fas fa-list-ul"></i>
+                            <span class="operations__list__btn__title">Composez votre menu</span>
+                    </button> 
                 </li> 
-            </ol>           
-            <ol class="operations__lists">
                 <li class="operations__list">
-                    <div class="operations__tasteFoodRestaurant">
-                        <button class="operations__list__btn">
-                            <i class="fas fa-store operations__list__btn__iconicon"></i>
-                            <span class="operations__list__btn__title">Dégustez au restaurant</span>
-                        </button> 
-                    </div> 
+                    <button class="operations__list__btn">
+                        <i class="fas fa-store operations__list__btn__iconicon"></i>
+                        <span class="operations__list__btn__title">Dégustez au restaurant</span>
+                    </button> 
                 </li> 
             </ol>     
         </section>
-
-        <section class="restaurants"> 
-            <h1 class="restaurants__title">Restaurants</h1>
+        <section class="section__restaurants"> 
+            <h2 class="section__restaurants__title">Restaurants</h2>
+        <div class="restaurants">
             <article class="restaurants__cards">
                 <div class="restaurants__cards__card">
-                    <a href="./menu-palette-du-gout.html">
-                        <img class="restaurants__cards__card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat de nouveau restaurant, la palette du goût situé à Ménilmontant"></img> 
+                    <a class="card" href="./menu-palette-du-gout.html">
+                        <img class="restaurants__cards__card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat de nouveau restaurant, la palette du goût situé à Ménilmontant">
                         <div class="restaurants__cards__card__new">
-                            <span class="restaurants__cards__card__new__new">Nouveau<span>
+                            <span class="restaurants__cards__card__new__new">Nouveau</span>
                         </div>
-                        <h2 class="restaurants__cards__card__title">La palette du goût</h2>
+                        <h3 class="restaurants__cards__card__title">La palette du goût</h3>
                         <p class="restaurants__cards__card__subhead">Ménilmontant</p>
-                        <div class="restaurants__cards__card__icon">
-                            <i class="restaurants__cards__card__icon__heart  far fa-heart fa-2x"></i>
-                            <i class="restaurants__cards__card__icon__heart  fas fa-heart fa-2x"></i>
-                        </div>
-                    </a>
+                    </a>   
+                    <input type="checkbox" class="restaurants__cards__card__like-btn"><i class="restaurants__cards__card__like-btn__heart fa fa-heart"></i>
                 </div>
             </article>
             <article class="restaurants__cards">
                 <div class="restaurants__cards__card">
                     <a  href="menu-la-note-enchantée.html"> 
-                        <img class="restaurants__cards__card__img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat d'un nouveau restaurant -La note enchantée- situé à Charonne"></img>
+                        <img class="restaurants__cards__card__img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat d'un nouveau restaurant -La note enchantée- situé à Charonne">
                         <div class="restaurants__cards__card__new">
-                            <span class="restaurants__cards__card__new__new">Nouveau<span>
+                            <span class="restaurants__cards__card__new__new">Nouveau </span>
                         </div>
-                        <h2 class="restaurants__cards__card__title">La note enchantée</h2>
+                        <h3 class="restaurants__cards__card__title">La note enchantée</h3>
                         <p class="restaurants__cards__card__subhead">Charonne</p>
-                        <div class="restaurants__cards__card__icon">
-                            <i class="restaurants__cards__card__icon__heart  far fa-heart fa-2x"></i>
-                            <i class="restaurants__cards__card__icon__heart  fas fa-heart fa-2x"></i>
-                        </div>
-                    </a> 
+                    </a>
+                    <input type="checkbox" class="restaurants__cards__card__like-btn"><i class="restaurants__cards__card__like-btn__heart fa fa-heart"></i>   
                 </div>
             </article> 
             <article class="restaurants__cards">
                 <div class="restaurants__cards__card">
                     <a href="menu-à-la-française.html">
-                        <img class="restaurants__cards__card__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat de restaurant -A la française- situé à la cité Rouge"></img>
-                        <h2 class="restaurants__cards__card__title">À la française</h2>
+                        <img class="restaurants__cards__card__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat de restaurant -A la française- situé à la cité Rouge">
+                        <h3 class="restaurants__cards__card__title">À la française</h3>
                         <p class="restaurants__cards__card__subhead">Cité Rouge</p>
-                        <div class="restaurants__cards__card__icon">
-                            <i class="restaurants__cards__card__icon__heart  far fa-heart fa-2x"></i>
-                            <i class="restaurants__cards__card__icon__heart  fas fa-heart fa-2x"></i>
-                         </div>
                     </a>
+                    <input type="checkbox" class="restaurants__cards__card__like-btn"> <i class="restaurants__cards__card__like-btn__heart fa fa-heart"></i>
                 </div>
             </article>
             <article class="restaurants__cards">
                 <div class="restaurants__cards__card">
                     <a href="menu-Le-délice-des-sens.html">
-                        <img class="restaurants__cards__card__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'un plat d'un restaurant -Le délice des sens- situé à Folie-Méricourt"></img>
-                        <h2 class="restaurants__cards__card__title">Le délice des sens</h2>
+                        <img class="restaurants__cards__card__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'un plat d'un restaurant -Le délice des sens- situé à Folie-Méricourt">
+                        <h3 class="restaurants__cards__card__title">Le délice des sens</h3>
                         <p class="restaurants__cards__card__subhead">Folie-Méricourt</p>
-                        <div class="restaurants__cards__card__icon">
-                            <i class="restaurants__cards__card__icon__heart far fa-heart fa-2x"></i>
-                            <i class="restaurants__cards__card__icon__heart fas fa-heart fa-2x"></i>
-                        </div>
-                    </a>
+                    </a>  
+                    <input type="checkbox" class="restaurants__cards__card__like-btn"><i class="restaurants__cards__card__like-btn__heart fa fa-heart"></i>
                 </div>
-            </article>  
+            </article> 
+        </div>
         </section>
     </main>
     <footer class="footer">
-        <h1 class="footer__logo"><i> ohmyfood</i></h1>
+        <h4 class="footer__logo"><i> ohmyfood</i></h4>
         <a class="footer__link">
             <i class="footer__link__icon fas fa-utensils"></i>
-            <span class="footer__link__subtitle" href="#">Proposer un restaurant</span>
+            <span class="footer__link__subtitle">Proposer un restaurant</span>
         </a><br>
         <a class="footer__link" href="#">
             <i class="footer__link__icon fas fa-hands-helping" aria-hidden="true"></i>
@@ -134,7 +116,6 @@
             <span class="footer__link__subtitle">Mentions légales</span>
         </a><br>
         <a class="footer__link" href="mailto:contact@example.com"> contact</a>
-        </a><br>   
     </footer>
 </body>
 </html>
