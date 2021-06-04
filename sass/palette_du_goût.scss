@@ -1,6 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Shrikhand&display=swap');
-@import './-variables';
+@import './variables';
 
 body, html {
   margin: 0;
@@ -24,8 +23,8 @@ a {
 .header {
  @include _header;
 }
-
 /*Main*/
+/*main:header*/
 .main__header{
   width: 100%;
   margin: 0;
@@ -120,7 +119,7 @@ a {
   height: 100%;
   overflow: hidden;
   
-  &{
+  &{//animation progression 
     -webkit-animation: pro 1s linear forwards;
         animation: pro 1s linear forwards;
   }

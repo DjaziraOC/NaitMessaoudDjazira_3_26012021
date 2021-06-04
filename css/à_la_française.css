@@ -419,6 +419,7 @@ a {
 .menu__card:hover .menu__card__icon {
   animation: slide 3s cubic-bezier(0.075, 0.8, 0.1, 1) forwards;
   background-color: #99E2D0;
+  cursor: pointer;
 }
 @keyframes slide {
   0% {
@@ -563,4 +564,4 @@ a {
   margin-right: 10px;
 }
 
-/*# sourceMappingURL=palatte-du-go%C3%BBt.css.map */
+/*# sourceMappingURL=%C3%A0_la_fran%C3%A7aise.css.map */

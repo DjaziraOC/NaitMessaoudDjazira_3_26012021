@@ -1,5 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Shrikhand&display=swap');
-@import './-variables';
+@import './variables';
 
 body, html {
   margin: 0;
@@ -23,8 +24,8 @@ a {
 .header {
  @include _header;
 }
+
 /*Main*/
-/*main:header*/
 .main__header{
   width: 100%;
   margin: 0;
@@ -119,7 +120,7 @@ a {
   height: 100%;
   overflow: hidden;
   
-  &{//animation progression 
+  &{
     -webkit-animation: pro 1s linear forwards;
         animation: pro 1s linear forwards;
   }
@@ -400,7 +401,6 @@ a {
   &:hover .menu__card__icon{
     animation: slide 3s cubic-bezier(0.075, 0.80, 0.1, 1) forwards;
     background-color:$Tertiaire;
-    cursor: pointer;
   }
     @keyframes slide{
      0%{
@@ -481,7 +481,7 @@ a {
   position: relative;
   border-radius:$radius-btn;
   color: $white;
-  margin:auto;
+  margin: auto;
   margin-top:50px;
   height:45px;
   width:200px;

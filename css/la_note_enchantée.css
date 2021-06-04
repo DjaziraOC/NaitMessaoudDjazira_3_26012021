@@ -62,7 +62,6 @@ a {
 }
 
 /*Main*/
-/*main:header*/
 .main__header {
   width: 100%;
   margin: 0;
@@ -89,7 +88,7 @@ a {
   height: 100%;
   width: 100%;
   z-index: 2;
-  top: -55px;
+  top: -155px;
 }
 @media (min-width: 1300px) {
   .Menu {
@@ -137,6 +136,11 @@ a {
   grid-template-rows: auto repeat(3, 1fr);
   grid-template-columns: 1fr;
   margin: 0 12px 0 20px;
+}
+@media (min-width: 850px) {
+  .menu.Menus {
+    grid-template-rows: auto repeat(4, 1fr);
+  }
 }
 
 .menu__title {
@@ -242,6 +246,34 @@ a {
 .menu__card.card3 {
   -webkit-animation: slidedown 1s linear 2s backwards;
   animation: slidedown 1s linear 2s backwards;
+}
+@-webkit-keyframes slidedown {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+    opacity: 1;
+  }
+}
+@keyframes slidedown {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
+    opacity: 1;
+  }
+}
+.menu__card.card4 {
+  -webkit-animation: slidedown 1.2s linear 2.5s backwards;
+  animation: slidedown 1.2s linear 2.5s backwards;
 }
 @-webkit-keyframes slidedown {
   from {
@@ -419,7 +451,6 @@ a {
 .menu__card:hover .menu__card__icon {
   animation: slide 3s cubic-bezier(0.075, 0.8, 0.1, 1) forwards;
   background-color: #99E2D0;
-  cursor: pointer;
 }
 @keyframes slide {
   0% {
@@ -564,4 +595,4 @@ a {
   margin-right: 10px;
 }
 
-/*# sourceMappingURL=%C3%A0-la-fran%C3%A7aise.css.map */
+/*# sourceMappingURL=la_note_enchant%C3%A9e.css.map */
